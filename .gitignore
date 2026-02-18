@@ -1,0 +1,16 @@
+# Backups
+hypr-backup-back-up_1224_1309/
+
+# VS Code junk
+Code/Cache/
+Code/CachedData/
+Code/CachedExtensionVSIXs/
+Code/CachedConfigurations/
+Code/CachedProfilesData/
+
+# App caches
+Antigravity/CachedData/
+
+# General
+*.log
+*.tmp
