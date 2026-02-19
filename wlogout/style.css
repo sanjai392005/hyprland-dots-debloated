@@ -1,5 +1,5 @@
 * {
-    font-family: "Fira Code", monospace;
+    font-family: "JetBrains Mono", monospace;
     font-weight: bold;
     background-image: none;
 }
@@ -10,7 +10,7 @@ window {
 
 button {
     padding-bottom: 6px;
-    padding-top: 5px;
+    padding-top: 8px;
     margin: 3px;
     background-color: rgba(255, 255, 255, 0.03);
     border: 2px solid rgba(255, 255, 255, 0.08);
@@ -20,7 +20,7 @@ button {
 }
 
 button label {
-    font-size: 30px;
+    font-size: 27px;
     color: rgba(210, 210, 225, 0.85);
 }
 
@@ -37,6 +37,6 @@ button:hover label {
 button:focus {
     background-color: rgba(255, 255, 255, 0.15);
     color: #ffffff;
-    border-color: #ffffff;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+    border-color: #c96537;
+    box-shadow: 0 0 0 1px #fab13b;
 }
