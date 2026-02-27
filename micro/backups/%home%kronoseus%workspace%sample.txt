@@ -1,0 +1,42 @@
+[
+ "!pip install requests\nimport numpy as np \nimport pandas as pd ",
+ "print(\"sisyphus)"
+]
+
+
+
+
+[
+ "\nimport numpy as np \nimport pandas as pd ",
+ "print(\"sisyphus)"
+]
+
+
+
+
+Module(
+  body=[
+    Import(
+      names=[
+        alias(name='numpy', asname='np')]),
+    Import(
+      names=[
+        alias(name='pandas', asname='pd')])],
+  type_ignores=[])
+
+
+
+ {'numpy', 'pandas'}
+
+
+ #unchanged, no stdlib here
+ {'numpy', 'pandas'}
+ 
+
+ {
+  'numpy': 'numpy',
+  'pandas': 'pandas'
+ }
+
+
+ 

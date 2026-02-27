@@ -1,4 +1,6 @@
 {
     "clipboard": "terminal",
-    "mkparents": true
+    "colorscheme": "candybabe",
+    "mkparents": true,
+    "softwrap": true
 }
