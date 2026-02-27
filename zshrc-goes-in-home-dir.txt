@@ -87,9 +87,10 @@ alias zshrc='micro ~/.zshrc'
 # artstation for wallpapers
 # micro : intend text : ctrl+i 
 # micro : quick once time commandline stuff : ctrl+b
-# dots git quickie : git add zshrc-goes-in-home-dir.txt hypr waybar rofi kitty neofetch fastfetch btop cava gtk-3.0 gtk-4.0 qt5ct qt6ct Kvantum nwg-look swappy swaync wlogout wallust Thunar xsettingsd xarchiver .gitignore micro
+# dots git quickie : git add zshrc-goes-in-home-dir.txt hypr waybar rofi kitty neofetch fastfetch btop cava gtk-3.0 gtk-4.0 qt5ct qt6ct Kvantum nwg-look swappy swaync wlogout wallust Thunar xsettingsd xarchiver .gitignore micro/settings.json micro/bindings.json micro/colorschemes/ micro/syntax/
 # Set-up icons for files/directories in terminal using lsd
 # Render markdown in CLI : glow
+# micro : softwrap : ctrl+e - set softwrap on
 
 
 # ========================== NVIM TIPS ================================
