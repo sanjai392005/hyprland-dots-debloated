@@ -240,17 +240,17 @@
 ; gradient_color_7 = '#cc5933'
 ; gradient_color_8 = '#cc3333'
 
-# for wallust
+# for matugen
 gradient = 1
 gradient_count = 8
-gradient_color_1 = '{{color0}}'
-gradient_color_2 = '{{color2}}'
-gradient_color_3 = '{{color3}}'
-gradient_color_4 = '{{color5}}'
-gradient_color_5 = '{{color7}}'
-gradient_color_6 = '{{color12}}'
-gradient_color_7 = '{{color13}}'
-gradient_color_8 = '{{color15}}'
+gradient_color_1 = '{{colors.surface.default.hex}}'
+gradient_color_2 = '{{colors.tertiary.default.hex}}'
+gradient_color_3 = '{{colors.secondary_container.default.hex}}'
+gradient_color_4 = '{{colors.tertiary_container.default.hex}}'
+gradient_color_5 = '{{colors.on_surface.default.hex}}'
+gradient_color_6 = '{{colors.on_primary_container.default.hex}}'
+gradient_color_7 = '{{colors.on_tertiary.default.hex}}'
+gradient_color_8 = '{{colors.on_background.default.hex}}'
 
 
 [smoothing]

@@ -1,14 +1,11 @@
-/* ROFI SQUARED THEME USING THE MATERIAL DARKER PALETTE  */
-/* Author: Newman Sanchez (https://github.com/newmanls) */
-
-* {
+*{
     font:   "FiraCode Nerd Font Medium 12";
 
     bg0:     #121010;
     bg1:     #080707;
     fg0:     #f2da96;
 
-    accent-color:     #d17b1f;
+    accent-color:     #ad2434;
     urgent-color:     #ffcb6b;
 
     background-color:   transparent;
@@ -24,8 +21,8 @@ window {
     location:   center;
     width:      300;
 	height: 300;
-   // background-color:   @bg0;
-   // background-color: transparent;
+    //background-color:   @bg0;
+    background-color: transparent;
     background-color: rgba(0, 0, 0, 0.3);
    
 

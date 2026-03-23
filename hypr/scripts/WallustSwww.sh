@@ -54,6 +54,10 @@ ln -sf "$wallpaper_path" "$rofi_link" || true
 mkdir -p "$(dirname "$wallpaper_current")"
 cp -f "$wallpaper_path" "$wallpaper_current" || true
 
-# Run wallust (silent) to regenerate templates defined in ~/.config/wallust/wallust.toml
-# -s is used in this repo to keep things quiet and avoid extra prompts
-wallust run -s "$wallpaper_path" || true
+# Run matugen to regenerate templates
+MODE=$(cat "$HOME/.cache/.theme_mode" 2>/dev/null || echo "Dark")
+if [ "$MODE" = "Light" ]; then
+    matugen image -m light --source-color-index 0 "$wallpaper_path" || true
+else
+    matugen image -m dark --source-color-index 0 "$wallpaper_path" || true
+fi
