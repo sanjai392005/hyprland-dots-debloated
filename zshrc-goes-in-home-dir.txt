@@ -16,6 +16,11 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+# command (first token)
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=2'
+
+# arguments
+ZSH_HIGHLIGHT_STYLES[default]='fg=7'
 
 # ======================== PATH =======================================
 export PATH="$HOME/.local/bin:$PATH"
@@ -78,45 +83,64 @@ alias togo='/home/kronoseus/workspace/programming/go'
 alias toddos='/home/kronoseus/workspace/career/projects/ddos'
 alias toleet='/home/kronoseus/workspace/programming/leetcode/'
 alias zshrc='micro ~/.zshrc'
+#alias wallpaper='micro /home/kronoseus/.config/hypr/configs/Startup_Apps.conf'
+alias tosisyphus='/home/kronoseus/workspace/career/projects/ipynb-dependency-vulnerabilities'
+alias qwen3.5='ollama run qwen3.5 --think=false'
+alias qwen3.5-thinking='ollama run qwen3.5'
+alias advprt="~/workspace/college/notes/semester-6/20cys384-advanced-protocol/"
+alias ddos='/home/kronoseus/workspace/career/projects/ddos/'
+alias torust='~/workspace/college/notes/semester-6/20cys312-principles-of-programming-languages/rust/rust-gemini'
+alias todevtrails='/home/kronoseus/workspace/career/projects/devtrails/'
 
+#========================== FUNCTIONS ================================
+# wallpaper() {
+  # local path
+  # local type
+# 
+  # echo -n "Enter path to wallpaper: "
+  # read path
+# 
+  # if [[ ! -e "$path" ]]; then
+    # echo "Error: file does not exist."
+    # return 1
+  # fi
+# 
+  # echo "Is this a picture or a video? (p/v): "
+  # read type
+# 
+  # case "$type" in
+    # p|P)
+      # gslapper -o "loop" eDP-1 "$path"
+      # ;;
+    # v|V)
+      # gslapper -o "fill" eDP-1 "$path"
+      # ;;
+    # *)
+      # echo "Invalid option. Use p or v."
+      # return 1
+      # ;;
+  # esac
+# }
 
 #========================== TIPS AND COMMANDS =========================
 # uninstall flatpak apps : sudo flatpak uninstall <app-id>
-# uninstall snap apps : sudo snap remove <app-name>
+# uninstall snap apps : sudo snap remove --purge <app-name>
 # wine file explorer : winefile
 # artstation for wallpapers
 # micro : intend text : ctrl+i 
 # micro : quick once time commandline stuff : ctrl+b
-# dots git quickie : git add zshrc-goes-in-home-dir.txt hypr waybar rofi kitty neofetch fastfetch btop cava gtk-3.0 gtk-4.0 qt5ct qt6ct Kvantum nwg-look swappy swaync wlogout wallust Thunar xsettingsd xarchiver .gitignore micro/settings.json micro/bindings.json micro/colorschemes/ micro/syntax/
+# dots git quickie : git add zshrc-goes-in-home-dir.txt hypr waybar rofi kitty neofetch fastfetch btop cava gtk-3.0 gtk-4.0 qt5ct qt6ct Kvantum nwg-look swappy swaync wlogout wallust Thunar xsettingsd xarchiver .gitignore micro/settings.json micro/bindings.json micro/colorschemes/ micro/syntax/ matugen/ some-wallpapers/ custom-firefox-themes/ sddm-stuff/ Dark-Reader-Settings.json
 # Set-up icons for files/directories in terminal using lsd
 # Render markdown in CLI : glow
 # micro : softwrap : ctrl+e - set softwrap on
+# Haskell : running a haskell file : runghc 
+# kitty themes: kitty +kitten themes
+# ## command (first token)
+# ZSH_HIGHLIGHT_STYLES[arg0]='fg=2' -> color2 in kitty
+# 
+# # arguments
+# ZSH_HIGHLIGHT_STYLES[default]='fg=7' -> color7 in kitty
 
 
-# ========================== NVIM TIPS ================================
-# good resource = https://vimschool.netlify.app/basics/navigatingext/
-# mouse select and then 'y' -> copying 
-# esc then 'i' -> insert mode 
-# esc then 'v' for visual mode 
-# mouse select and then 'del' -> for deleting selected text 
-# mouse select and then 'd' -> for cut 
-# mouse select and then del -> for delete
-# esc then 'u' -> undo 
-# esc + space + fe --> file explorer
-# go to a directory + 'a' + type the relative path of new file --> creating new file
-# visual selection + '>' --> alternative to moving selection by above
-# esc + : + 'e' + path to file --> open a diff file in the given path in nvim another tab
-# esc + '$' --> EOL
-# esc + '^' --> BOL 
-# esc + 'g'g' --> top of page
-# esc + 'G' --> bottom of page
-# esc + space + 'f''T' --> terminal
+# --- syntax highlight overrides (must be last) ---
 
-
-# ======================== MISCELLANEOUS ===============================
-# python3(){
-	# local target_path="/home/kronoseus/workspace/career/projects/cve_llm/implementation/testing-osv/syft-mini/"
-    # if [[ "$1" == "dependencies.py" && "$2" == "$target_path" ]]; then
-    # echo "Report generated at /home/kronoseus/workspace/career/projects/cve_llm/implementation/testing-osv/syft-mini/report.txt"
-    # fi
-# }
