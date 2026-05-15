@@ -151,4 +151,4 @@ alias tohypr='~/.config/hypr'
 	# - go to /home/kronoseus/workspace/tools/Hyprland
 	# - git pull 
 	# - remove old build by : rm -rf build
-	# - cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -B build ; cmake --build build -j$(nproc); sudo cmake --install build
+	# - cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -B build && cmake --build build -j$(nproc) && sudo cmake --install build
