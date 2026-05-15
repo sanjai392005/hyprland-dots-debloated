@@ -26,14 +26,14 @@
 # for matugen
 gradient = 1
 gradient_count = 8
-gradient_color_1 = '#0a1519'
-gradient_color_2 = '#cbddff'
-gradient_color_3 = '#7794ad'
-gradient_color_4 = '#7692bf'
-gradient_color_5 = '#ffffff'
-gradient_color_6 = '#000000'
-gradient_color_7 = '#01264d'
-gradient_color_8 = '#d9e4eb'
+gradient_color_1 = '#0f1417'
+gradient_color_2 = '#c8c2ea'
+gradient_color_3 = '#364954'
+gradient_color_4 = '#474364'
+gradient_color_5 = '#dfe3e7'
+gradient_color_6 = '#c1e8ff'
+gradient_color_7 = '#302c4c'
+gradient_color_8 = '#dfe3e7'
 
 [smoothing]
 ; integral = 77

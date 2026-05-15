@@ -3,31 +3,28 @@
 
     bg0:     #121010;
     bg1:     #080707;
-    fg0:     #f2da96;
+    fg0:     #D4FFD5;
 
-    accent-color:     #ad2434;
-    urgent-color:     #ffcb6b;
+    accent-color:     #35821A;
+    urgent-color:     #dc322f;
 
-    background-color:   transparent;
+    background-color:   #000000;
     text-color:         @fg0;
 
     margin:     0;
     padding:    0;
     spacing:    0;
-
 }
 
 window {
     location:   center;
     width:      300;
-	height: 300;
-    //background-color:   @bg0;
-    background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.3);
-   
+    height:     300;
+
+    background-color: rgba(0, 0, 0, 0);
 
     border: 1.5px;
-    border-color: #f2da96;
+    border-color: #35821A;
     border-radius: 20px;
 }
 
@@ -81,7 +78,7 @@ element alternate active {
 }
 
 element selected {
-    text-color: @bg0;
+    text-color: #ffffff;
 }
 
 element selected normal, element selected active {
