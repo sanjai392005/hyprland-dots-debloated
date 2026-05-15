@@ -91,6 +91,9 @@ alias advprt="~/workspace/college/notes/semester-6/20cys384-advanced-protocol/"
 alias ddos='/home/kronoseus/workspace/career/projects/ddos/'
 alias torust='~/workspace/college/notes/semester-6/20cys312-principles-of-programming-languages/rust/rust-gemini'
 alias todevtrails='/home/kronoseus/workspace/career/projects/devtrails/'
+alias todefcon='/home/kronoseus/workspace/career/competitions/defcon/'
+alias toscripts='/home/kronoseus/workspace/scripts'
+alias tohypr='~/.config/hypr'
 
 #========================== FUNCTIONS ================================
 # wallpaper() {
@@ -144,3 +147,8 @@ alias todevtrails='/home/kronoseus/workspace/career/projects/devtrails/'
 
 # --- syntax highlight overrides (must be last) ---
 
+# updating hyprland from upstream:
+	# - go to /home/kronoseus/workspace/tools/Hyprland
+	# - git pull 
+	# - remove old build by : rm -rf build
+	# - cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -B build ; cmake --build build -j$(nproc); sudo cmake --install build
