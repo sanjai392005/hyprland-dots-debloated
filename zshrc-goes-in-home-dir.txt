@@ -60,7 +60,7 @@ alias balanced='powerprofilesctl set balanced'
 alias powersaver='powerprofilesctl set powersaver'
 alias pwn='/home/kronoseus/workspace/career/ctf_v/pwn/'
 alias binaryexp='/home/kronoseus/workspace/career/ctf_v/pwn/'
-alias sem6='/home/kronoseus/workspace/college/notes/semester-6/'
+alias sem7='/home/kronoseus/workspace/college/notes/semester-7/'
 alias codebutler='python /home/kronoseus/workspace/career/projects/code-sec-suggester/implementation/main.py'
 alias fanspeed='echo 0 | sudo tee /sys/class/hwmon/hwmon5/pwm1_enable = fan control'
 alias fannormal='echo 2 | sudo tee /sys/class/hwmon/hwmon5/pwm1_enable = fan control'
@@ -94,36 +94,17 @@ alias todevtrails='/home/kronoseus/workspace/career/projects/devtrails/'
 alias todefcon='/home/kronoseus/workspace/career/competitions/defcon/'
 alias toscripts='/home/kronoseus/workspace/scripts'
 alias tohypr='~/.config/hypr'
+alias atlampp='/opt/lampp'
 
 #========================== FUNCTIONS ================================
-# wallpaper() {
-  # local path
-  # local type
-# 
-  # echo -n "Enter path to wallpaper: "
-  # read path
-# 
-  # if [[ ! -e "$path" ]]; then
-    # echo "Error: file does not exist."
-    # return 1
-  # fi
-# 
-  # echo "Is this a picture or a video? (p/v): "
-  # read type
-# 
-  # case "$type" in
-    # p|P)
-      # gslapper -o "loop" eDP-1 "$path"
-      # ;;
-    # v|V)
-      # gslapper -o "fill" eDP-1 "$path"
-      # ;;
-    # *)
-      # echo "Invalid option. Use p or v."
-      # return 1
-      # ;;
-  # esac
-# }
+rmf() { # FZF + RG
+  : | fzf --disabled --ansi \
+    --bind "start:reload(rg --column --line-number --no-heading --color=always --smart-case {q})" \
+    --bind "change:reload(rg --column --line-number --no-heading --color=always --smart-case {q} || true)" \
+    --preview "bat --color=always --style=numbers --highlight-line {2} {1}" \
+    --preview-window "up,60%,border-bottom,+{2}+3/3"
+}
+
 
 #========================== TIPS AND COMMANDS =========================
 # uninstall flatpak apps : sudo flatpak uninstall <app-id>
@@ -152,3 +133,21 @@ alias tohypr='~/.config/hypr'
 	# - git pull 
 	# - remove old build by : rm -rf build
 	# - cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -B build && cmake --build build -j$(nproc) && sudo cmake --install build
+
+# docker tutorials : docker run -dp 80:80 docker/getting-started
+# to view processes running at a certain port: sudo ss -tlnp | grep ':80'
+
+# ============================ AMBXST STUFF ========================
+# ambxst qml components are there at ~/.local/src/ambxst
+
+# flow for feature branches
+	# git fetch upstream
+	# git checkout main
+	# git merge upstream/main
+	# git push origin main
+	# git checkout my-changes
+	# git merge main
+	# git push origin my-changes
+
+
+export PAGER=cat
